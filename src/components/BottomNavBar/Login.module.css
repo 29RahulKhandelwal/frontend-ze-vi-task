@@ -1,0 +1,77 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.login{
+    position: fixed;
+    width: 97.8%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    z-index: 30;
+    bottom: 0;
+    height: 220px;
+}
+.otp{
+    position: fixed;
+    width: 97.8%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    z-index: 30;
+    bottom: 0;
+    height: 220px;
+}
+.heading{
+    display: inline-flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid lightgray;
+}
+.back{
+    width: 48%;
+    cursor: pointer;
+}
+.headingName{
+    margin: 0;
+    font-size: 25px;
+    width: 50%;
+}
+.loginSection{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.phnInp{
+    width: 85.8%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.submitBtn{
+    width: 87.5%;
+    height: 40px;
+    display: block;
+    margin: 0px auto;
+    background-color: mediumseagreen;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+.anchorTag{
+    color: gray;
+    text-decoration: underline;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}

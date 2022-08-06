@@ -1,0 +1,7 @@
+.main{
+    max-height: 86vh;
+    overflow-y: scroll;
+}
+.products{
+    margin: 20px;
+}

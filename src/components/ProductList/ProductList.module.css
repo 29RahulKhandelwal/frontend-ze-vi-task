@@ -1,0 +1,16 @@
+.productlist{
+    width: 100%;
+    height: 125px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    margin: 20px 0px;
+}
+.left{
+    height: 100px;
+    width: 100px;
+}
+.right{
+    width: 93%;
+    margin-left: 15px;
+    height: 125px;
+}
