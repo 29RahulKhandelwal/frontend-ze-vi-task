@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import classes from './App.module.css';
 import BottomNavBar from './components/BottomNavBar/BottomNavBar';
 import Checkout from './components/Checkout/Checkout';
+import OrderConfirmed from './components/Checkout/OrderConfirmed';
 import ProductList from './components/ProductList/ProductList';
 import data from "./data";
 
@@ -18,6 +19,7 @@ const App = () => {
       </div>
       <BottomNavBar /></>} />
       <Route exact path="/checkout" element={<Checkout />} />
+      <Route exact path="/OrderConfirmed" element={<OrderConfirmed />} />
     </Routes>
   )
 }

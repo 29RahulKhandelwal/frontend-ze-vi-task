@@ -14,11 +14,3 @@ export const CrossAction=(data)=>{
         }
     }
 }
-export const OrderAction=(data)=>{
-    return{
-        type:"ORDER_ACTION",
-        payload:{
-            data:data
-        }
-    }
-}

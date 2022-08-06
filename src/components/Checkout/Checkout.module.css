@@ -1,5 +1,5 @@
 .cartdetails {
-    width: 97%;
+    width: 96%;
     margin: 0px auto;
     padding: 10px;
 }
@@ -82,6 +82,36 @@
     text-align: end;
     margin-right: 5px;
     font-weight: 500;
+}
+
+.bottomNavbar{
+    background-color: mediumseagreen;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: inline-flex;
+    left: 0;
+}
+.payment{
+    text-align: end;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.rightarrow{
+    width: 50%;
+    margin-top: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+.links{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: inline-flex;
 }
 
 @media (min-width:1220px) and (max-width:1400px){

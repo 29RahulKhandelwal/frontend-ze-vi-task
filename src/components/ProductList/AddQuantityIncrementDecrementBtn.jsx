@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from "react-redux"
-import { OrderAction } from '../../actions'
 import classes from "./AddQuantityIncrementDecrementBtn.module.css"
 
-const AddQuantityIncrementDecrementBtn = (props) => {
-  const dispatch=useDispatch()
-  const {data}=props;
+const AddQuantityIncrementDecrementBtn = () => {
   const [count,setCount]=useState(0);
   const [isCount,setIsCount]=useState(false);
 
@@ -24,14 +20,6 @@ const AddQuantityIncrementDecrementBtn = (props) => {
       setIsCount(false)
     }
   },[count])
-
-  const orderData={
-    count,
-    ...data
-  }
-  useEffect(()=>{
-    dispatch(OrderAction(orderData))
-  },[orderData,dispatch,count])
 
   return (
     <>

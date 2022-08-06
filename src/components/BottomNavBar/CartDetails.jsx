@@ -1,14 +1,8 @@
 import React from 'react'
-import { useSelector } from "react-redux"
+import AddQuantityIncrementDecrementBtn from '../ProductList/AddQuantityIncrementDecrementBtn'
 import classes from "./CartDetails.module.css"
-import AddQuantityIncrementDecrementBtn from "../ProductList/AddQuantityIncrementDecrementBtn";
 
 const CartDetails = (props) => {
-  const orderData=useSelector((state)=>state.orderReducer.orderData)
-  if(orderData[0]?.data?.count>0){
-    console.log(orderData[0].data.foodName)
-  }
-  
   return (
     <>
       {props.clicked && <div className={classes.cartdetails}>

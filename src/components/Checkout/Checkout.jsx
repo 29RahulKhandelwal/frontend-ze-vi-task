@@ -39,7 +39,14 @@ const Checkout = () => {
           <p className={classes.total}>Total</p>
           <p className={classes.totalamt}>Rs. 1</p>
         </div>
+        <div className={classes.bottomNavbar}>
+          <Link to="/OrderConfirmed" className={classes.links}>
+            <p className={classes.payment}>Select Payment</p>
+            <i class={`fa-solid fa-2x fa-arrow-right-long ${classes.rightarrow}`}></i>
+          </Link>
+        </div>
       </div>
+      
   )
 }
 
