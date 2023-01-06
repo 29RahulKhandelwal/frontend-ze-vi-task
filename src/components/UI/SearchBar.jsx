@@ -12,7 +12,7 @@ const SearchBar = (props) => {
   return (
     <div className='searchbar'>
         <input type="search" name="search" className='search' placeholder='Search' onClick={handleClick} autoComplete="off" />
-        <Link to="/product" className='linkProduct'>
+        <Link to="/products" className='linkProduct'>
           <i class="fa-solid fa-lg fa-magnifying-glass searchicon"></i>
         </Link>
     </div>

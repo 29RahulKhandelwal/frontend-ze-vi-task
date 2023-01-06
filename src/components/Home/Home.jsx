@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from "../../assets/logo.png"
 import LatestTrends from './LatestTrends'
 import SearchBar from '../UI/SearchBar'
 import "./Home.scss";
-import { useDispatch, useSelector } from 'react-redux';
-import { searchAction } from '../../store/search-slice';
+import { useSelector } from 'react-redux';
 
 const Home = () => {
     const isSearchClicked=useSelector((state)=>state.search.isSearchClicked);

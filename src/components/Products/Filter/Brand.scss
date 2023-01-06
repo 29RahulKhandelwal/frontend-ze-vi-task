@@ -1,0 +1,44 @@
+.brand, .price{
+    margin: 15px 0;
+    width: 192px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    border-bottom: 1px solid lightgray;
+}
+.checkbox-title{
+    display: flex;
+    font-size: 17px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+.checkbox-title:nth-last-child(1){
+    margin-bottom: 15px;
+}
+.check{
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+.filter-name{
+    font-weight: 400;
+    margin: 0 0 6px 0;
+}
+.updownArrow{
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.rated, .unrated{
+    position: relative;
+    top: 3px;
+}
+.rated{
+    color: orange;
+}
+.unrated{
+    color: #ccc;
+}

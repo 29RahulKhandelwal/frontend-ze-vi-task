@@ -1,0 +1,21 @@
+.searchProducts{
+    width: 90%;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    color: lightgray;
+}
+.searchProduct{
+    height: 30px;
+    padding: 25px;
+    width: 50%;
+    border-radius: 11px;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    outline: none;
+}
+.searchProductIcon{
+    position: relative;
+    right: 35px;
+    cursor: pointer;
+}
