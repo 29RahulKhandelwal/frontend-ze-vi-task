@@ -8,9 +8,11 @@ const Filter = () => {
   return (
     <div className='filter'>
         <h1 className='search-results'>Search Results</h1>
-        <Brand />
-        <Price />
-        <Rating />
+        <div className='filters'>
+          <Brand />
+          <Price />
+          <Rating />
+        </div>
     </div>
   )
 }

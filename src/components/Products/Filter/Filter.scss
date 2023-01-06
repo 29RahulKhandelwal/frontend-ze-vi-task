@@ -5,3 +5,16 @@
     font-weight: 400;
     margin: 0;
 }
+@media only screen and (max-width: 1080px) {
+    .search-results{
+        text-align: center;
+    }
+    .filter{
+        width: 100%;
+    }
+    .filters{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+}
