@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Link} from "react-router-dom";
 import "./SearchBar.scss";
+import { useDispatch } from 'react-redux';
+import { searchAction } from '../../store/search-slice';
 
 const SearchBar = (props) => {
-  const [isClicked,setIsClicked]=useState(false);
+  const dispatch=useDispatch();
   function handleClick(){
-    setIsClicked(true)
+    dispatch(searchAction.toggle());
   }
-  props.searchClick(isClicked);
   return (
     <div className='searchbar'>
         <input type="search" name="search" className='search' placeholder='Search' onClick={handleClick} autoComplete="off" />
