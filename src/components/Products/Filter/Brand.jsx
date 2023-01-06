@@ -26,6 +26,8 @@ const Brand = () => {
         dispatch(filterAction.BrandFilter(brandType))
     },[brandType,dispatch])
 
+    // console.log(brandType)
+
     return (
         <div className='brand'>
             <div className="heading">

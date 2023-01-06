@@ -3,30 +3,21 @@ import "./LatestTrends.scss";
 import PopularSuggestions from './PopularSuggestions';
 
 const LatestTrends = (props) => {
+    const {trends, suggestions}=props;
   return (
     <div className='latest'>
         <h3 className='latestTitle'>Latest Trends</h3>
-        <div className='product'>
-            <img className='productImg' src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-            <p className='productName'>Title</p>
+        <div className="trends">
+            {trends.map(trend=>{
+                return (
+                    <div className='product' key={trend.id}>
+                        <img className='productImg' src={trend.imgUrl} alt={trend.name+"-img"} />
+                        <p className='productName'>{trend.name}</p>
+                    </div>
+                )
+            })}
         </div>
-        <div className='product'>
-            <img className='productImg' src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-            <p className='productName'>Title</p>
-        </div>
-        <div className='product'>
-            <img className='productImg' src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-            <p className='productName'>Title</p>
-        </div>
-        <div className='product'>
-            <img className='productImg' src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-            <p className='productName'>Title</p>
-        </div>
-        <div className='product'>
-            <img className='productImg' src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-            <p className='productName'>Title</p>
-        </div>
-        <PopularSuggestions />
+        <PopularSuggestions suggestions={suggestions} />
     </div>
   )
 }

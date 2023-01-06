@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai"
 import "./Brand.scss"
 import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { filterAction } from '../../../store/filter-slice'
 import FiveStar from '../Star/FiveStar'
 import FourStar from '../Star/FourStar'
@@ -31,29 +31,27 @@ const Rating = () => {
         dispatch(filterAction.RatingFilter(rating))
     },[rating,dispatch])
 
-    console.log(useSelector((state)=>state.filter.Rating))
-
     return (
         <div className='brand'>
             <div className="heading">
                 <h4 className='filter-name'>RATINGS</h4>
                 {isToggle ? <AiOutlineUp size={15} onClick={handleToggle} className="updownArrow" /> : <AiOutlineDown size={15} onClick={handleToggle} className="updownArrow" />}
             </div>
-            {!isToggle && <section className="checkbox">
+            {!isToggle && <section>
                 <label className='checkbox-title'>
-                    <input className='check' type="checkbox" name="checkbox" value="five" onClick={e => handleRating("five")} /> <FiveStar />
+                    <input className='check' type="checkbox" name="checkbox" value="five" onClick={e => handleRating("5")} /> <FiveStar />
                 </label>
                 <label className='checkbox-title'>
-                    <input className='check' type="checkbox" name="checkbox" value="four" onClick={e => handleRating("four")} /> <FourStar />
+                    <input className='check' type="checkbox" name="checkbox" value="four" onClick={e => handleRating("4")} /> <FourStar />
                 </label>
                 <label className='checkbox-title'>
-                    <input className='check' type="checkbox" name="checkbox" value="Three" onClick={e => handleRating("Three")} /> <ThreeStar />
+                    <input className='check' type="checkbox" name="checkbox" value="Three" onClick={e => handleRating("3")} /> <ThreeStar />
                 </label>
                 <label className='checkbox-title'>
-                    <input className='check' type="checkbox" name="checkbox" value="Two" onClick={e => handleRating("Two")} /> <TwoStar />
+                    <input className='check' type="checkbox" name="checkbox" value="Two" onClick={e => handleRating("2")} /> <TwoStar />
                 </label>
                 <label className='checkbox-title'>
-                    <input className='check' type="checkbox" name="checkbox" value="One" onClick={e => handleRating("One")} /> <OneStar />
+                    <input className='check' type="checkbox" name="checkbox" value="One" onClick={e => handleRating("1")} /> <OneStar />
                 </label>
             </section>}
         </div>

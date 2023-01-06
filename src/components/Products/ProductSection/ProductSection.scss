@@ -1,0 +1,63 @@
+.productsSection{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+.productCard{
+    width: 200px;
+    margin: 0px 10px 0 0;
+}
+.productImage{
+    height: 250px;
+    width: 200px;
+    border-radius: 4px;
+}
+.redHeart, .emptyHeart{
+    position: relative;
+    top: 75px;
+    left: 170px;
+    cursor: pointer;
+}
+.redHeart{
+    color: red;
+}
+.emptyHeart{
+    color: white;
+}
+.viewProduct{
+    position: relative;
+    top: 250px;
+    background: rgba(109, 132, 255, 0.7019607843);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+.productTitle{
+    margin: 12px 0 8px 0;
+}
+.orignalPrice{
+    margin: 0px 5px 0 0;
+    display: inline-block;
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 600;
+}
+.currentPrice{
+    margin: 0 5px 0 0;
+    display: inline-block;
+    color: #6d84ff;
+    font-weight: 600;
+}
+.rating{
+    display: inline-block;
+    margin: 5px 5px 0 0;
+}
+.nRating{
+    position: relative;
+    top: -1px;
+}

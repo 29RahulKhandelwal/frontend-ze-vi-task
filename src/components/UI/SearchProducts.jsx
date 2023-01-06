@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SearchProducts.scss"
 
-const SearchProducts = () => {
+const SearchProducts = (props) => {
   return (
     <div className='searchProducts'>
         <input type="search" name="search" className='searchProduct' placeholder='Search' autoComplete="off" />

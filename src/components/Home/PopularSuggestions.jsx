@@ -1,15 +1,14 @@
 import React from 'react'
 import "./PopularSuggestions.scss"
 
-const PopularSuggestions = () => {
+const PopularSuggestions = (props) => {
+  const {suggestions}=props;
   return (
     <div className='popularSuggestion'>
         <h3 className='popularSuggestionTitle'>Popular Suggestions</h3>
-        <p className='suggestions'>Jeans</p>
-        <p className='suggestions'>Jeans</p>
-        <p className='suggestions'>Jeans</p>
-        <p className='suggestions'>Jeans</p>
-        <p className='suggestions'>Jeans</p>
+        {suggestions.map(suggestion=>{
+          return <p className='suggestions'>{suggestion}</p>
+        })}
     </div>
   )
 }

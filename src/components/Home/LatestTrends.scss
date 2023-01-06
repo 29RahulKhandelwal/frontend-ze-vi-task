@@ -6,6 +6,7 @@
     height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    border-radius: 4px;
 }
 .latestTitle{
     display: inline-block;
@@ -13,18 +14,23 @@
     width: 100%;
     text-align: left;
 }
+.trends{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .product{
     width: 160px;
-    display: inline-block;
     margin: 0px 27px 15px 0px;
 }
 .productImg{
     height: 200px;
     width: 160px;
+    border-radius: 4px;
 }
 .productName{
     color: darkgray;
-    margin: 0;
+    margin: 5px 0 0 0;
     font-size: 14px;
     width: 150px;
     text-align: left;

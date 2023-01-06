@@ -1,8 +1,12 @@
 .products{
 
 }
+.products-section{
+    width: 100%;
+}
 .products-main{
     padding: 25px 35px;
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
 }

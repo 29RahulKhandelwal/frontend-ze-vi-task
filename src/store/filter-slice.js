@@ -3,9 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const filterSlice=createSlice({
     name:"filter",
     initialState:{
-        Brand:null,
-        Price:null,
-        Rating:null,
+        Brand:0,
+        Price:0,
+        Rating:0,
     },
     reducers:{
         BrandFilter(state,action){
